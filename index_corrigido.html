@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechInclusiva - Portal de Notícias</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #222222;
+            color: #ffffff;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1,
+        header p {
+            color: #ffffff;
+        }
+
+        nav {
+            background-color: #eeeeee;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 15px;
+            color: #333333;
+            text-decoration: underline;
+        }
+
+        nav a:focus,
+        nav a:hover {
+            color: #000000;
+            outline: 2px solid #000000;
+        }
+
+        main {
+            padding: 25px;
+        }
+
+        .noticia {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .botao {
+            display: inline-block;
+            background-color: #005a9c;
+            color: #ffffff;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .botao:hover,
+        .botao:focus {
+            background-color: #003f6b;
+            outline: 2px solid #000000;
+            outline-offset: 2px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #555555;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #222222;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>TechInclusiva</h1>
+        <p>Informação e tecnologia para todos</p>
+    </header>
+
+    <nav aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#inclusao">Inclusão</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main id="inicio">
+
+        <h2>Últimas Notícias</h2>
+
+        <section class="noticia" id="inclusao">
+            <h3>Inclusão digital ganha força no Brasil</h3>
+
+            <img
+                src="https://placehold.co/600x300"
+                width="300"
+                alt=""
+            >
+
+            <p>
+                Projetos de inclusão digital estão ampliando o acesso
+                à tecnologia para pessoas com deficiência.
+            </p>
+
+            <a href="#contato">Leia mais sobre inclusão digital</a>
+        </section>
+
+        <section class="noticia" id="tecnologia">
+            <h3>Novas tecnologias assistivas</h3>
+
+            <img
+                src="https://placehold.co/600x300"
+                width="300"
+                alt=""
+            >
+
+            <p>
+                Ferramentas tecnológicas estão transformando
+                a experiência de navegação na internet.
+            </p>
+
+            <a class="botao" href="#contato">
+                Saiba mais sobre tecnologias assistivas
+            </a>
+        </section>
+
+        <section class="noticia" id="contato">
+            <h3>Receba nossas notícias</h3>
+
+            <p>Cadastre seu e-mail:</p>
+
+            <form>
+                <label for="email">Endereço de e-mail:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                >
+
+                <button class="botao" type="submit">
+                    Enviar cadastro
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>TechInclusiva - 2026</p>
+    </footer>
+
+</body>
+</html>
